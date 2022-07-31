@@ -7,6 +7,8 @@
 
 import PySimpleGUI as sg
 
+sg.theme('DarkBlue17')
+
 # Define window's ccontents.
 layout = [  [sg.Text("What is your name?:")],
             [sg.Input(key='-INPUT-')],
