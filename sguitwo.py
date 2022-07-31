@@ -7,7 +7,7 @@
 
 import PySimpleGUI as sg
 
-sg.theme('DarkBlue17')
+sg.theme('DarkBlue9')
 
 # Define window's ccontents.
 layout = [  [sg.Text("What is your name?:")],
