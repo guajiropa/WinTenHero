@@ -8,9 +8,6 @@
 from ahk import AHK
 from ahk.directives import NoTrayIcon
 
-ahk = AHK(directives=[NoTrayIcon])
-
-PolSet = SetExecutionPolicy(ahk)
 
 def SetExecutionPolicy(ahk_obj):
     ps_run = 'Run powershell.exe'
@@ -24,6 +21,8 @@ def SetExecutionPolicy(ahk_obj):
 
     return 0
 
+ahk = AHK(directives=[NoTrayIcon])
 
+PolSet = SetExecutionPolicy(ahk)
 
 
