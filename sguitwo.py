@@ -16,7 +16,7 @@ layout = [  [sg.Text("What is your name?:")],
             [sg.Button('Ok'), sg.Button('Quit')]   ] 
 
 # Create the window.
-winSG = sg.Window('Test two of PySimpleGUI', layout)
+winSG = sg.Window('Test two of PySimpleGUI', layout, no_titlebar=False, alpha_channel= 0.8)
 
 # Display and interact with the window using an 'Event Loop'
 while True:
