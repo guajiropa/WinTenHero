@@ -7,11 +7,11 @@
 
 import PySimpleGUI as sg
 
-sg.theme('DarkBlue9')
+sg.theme('DarkTanBlue')
 
 # Define window's ccontents.
 layout = [  [sg.Text("What is your name?:")],
-            [sg.Input(key='-INPUT-')],
+            [sg.Input(key='-NAME-')],
             [sg.Text(size=(40,1), key='-OUTPUT-')],
             [sg.Button('Ok'), sg.Button('Quit')]   ] 
 
@@ -25,7 +25,7 @@ while True:
     if event == sg.WINDOW_CLOSED or event == 'Quit':
         break
     # Write output message to the window.
-    winSG['-OUTPUT-'].update('Greetings ' + values['-INPUT-'] + "! Thanks for trying PySimpleGUI")
+    winSG['-OUTPUT-'].update('Greetings ' + values['-NAME-'] + "! Thanks for trying PySimpleGUI")
 
 # Finish up and destroy the window.
 winSG.close()
